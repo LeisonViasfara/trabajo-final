@@ -1,0 +1,36 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+nav a {
+    color: #ff5722;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.categories button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.categories button:hover {
+    background-color: #e64a19;
+}
+.recipe-section {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rece-Ar: Recetas de Comida</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">Rece-Ar</div>
+        <nav>
+            <ul>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="menu.html">Menú de recetas</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
+                <li><a href="login.html">iniciar seccion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="acerca">
+        <h1>Acerca de Rece-Ar</h1>
+        <p>Bienvenidos a Rece-Ar, el lugar perfecto para encontrar tus recetas favoritas de todo tipo, desde comidas rápidas hasta platos gourmet.</p>
+    </section>
+
+
+<section id="agregar-receta">
+    <h2>Agrega tu receta</h2>
+    <form id="form-receta">
+        <input type="text" id="nombre-receta" placeholder="Nombre de la receta" required>
+        <select id="categoria-receta">
+            <option value="rapidas">Comidas Rápidas</option>
+            <option value="asados">Asados</option>
+            <option value="ensaladas">Ensaladas</option>
+            <option value="Otro">Otro</option>
+        </select>
+        <textarea id="descripcion-receta" placeholder="Descripción de la receta" required></textarea>
+        <button type="button" onclick="agregarReceta()">Agregar Receta</button>
+    </form>
+</section>
+
+    
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes alguna duda o sugerencia? Escríbenos a contacto@rece-ar.com</p>
+    </section>
+     
+    <script src="app.js"></script>
+
+
+<footer>
+  <div class="footer-container">
+      <a href="https://wa.me/1234567890" target="_blank" class="footer-icon whatsapp" title="WhatsApp">
+          <img src="whatsapp-icon.png" alt="WhatsApp">
+      </a>
+      <a href="https://instagram.com/tuperfil" target="_blank" class="footer-icon instagram" title="Instagram">
+          <img src="instagram-icon.png" alt="Instagram">
+      </a>
+      <a href="https://facebook.com/tuperfil" target="_blank" class="footer-icon facebook" title="Facebook">
+          <img src="facebook-icon.png" alt="Facebook"> <box-icon type='logo' name='instagram'></box-icon>
+      </a>
+  </div>
+  <p>&copy; 2024 Rece-Ar. Todos los derechos reservados.</p>
+</footer>
+<box-icon type='logo' name='instagram'></box-icon>
+
+</body>
+</html>
