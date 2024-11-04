@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar receta</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+    <header>
+        <h1>Agregar receta</h1>
+        <nav>
+            <a href="index.html">Volver a Inicio</a>
+        </nav>
+    </header>
+
+    <section id="agregar-receta">
+        <h2>Agrega tu receta</h2>
+        <form id="form-receta">
+            <input type="text" id="nombre-receta" placeholder="Nombre de la receta" required>
+            <select id="categoria-receta">
+                <option value="rapidas">Comidas Rápidas</option>
+                <option value="asados">Asados</option>
+                <option value="ensaladas">Ensaladas</option>
+                <option value="Otro">Otro</option>
+            </select>
+            <textarea id="descripcion-receta" placeholder="Descripción de la receta" required></textarea>
+            <button type="button" onclick="agregarReceta()">Agregar Receta</button>
+        </form>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

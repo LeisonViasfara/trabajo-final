@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -16,6 +16,8 @@ nav a {
     text-decoration: none;
     margin: 0 10px;
 }
+
+
 .categories button {
     background-color: #ff5722;
     color: white;

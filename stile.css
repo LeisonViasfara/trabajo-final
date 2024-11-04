@@ -23,17 +23,25 @@ nav ul {
     list-style-type: none;
     display: flex;
 }
+
 nav ul li {
     margin-left: 20px;
 }
+
 nav ul li a {
     color: white;
     text-decoration: none;
 }
+nav ul li:hover {
+    background-color: #29ff22;
+
+}
+
 section {
     padding: 20px;
     margin-top: 10px;
 }
+
 .categories button {
     background-color: #ff5722;
     color: white;
@@ -43,18 +51,22 @@ section {
     cursor: pointer;
     border-radius: 5px;
 }
+
 .categories button:hover {
     background-color: #e64a19;
 }
+
 #recetas-container {
     margin-top: 20px;
 }
+
 .recipe {
     background-color: #f4f4f4;
     padding: 15px;
     margin: 10px 0;
     border-radius: 8px;
 }
+
 form input, form select, form textarea {
     width: 100%;
     padding: 10px;
@@ -62,6 +74,7 @@ form input, form select, form textarea {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+
 form button {
     background-color: #ff5722;
     color: white;
@@ -70,6 +83,7 @@ form button {
     border-radius: 5px;
     cursor: pointer;
 }
+
 form button:hover {
     background-color: #e64a19;
 }
@@ -99,6 +113,7 @@ footer {
     gap: 20px;
     margin-bottom: 10px;
 }
+
 .footer-icon img {
     width: 40px;
     height: 40px;
@@ -114,11 +129,13 @@ footer {
     background-color: #25D366; 
     padding: 5px;
 }
+
 .footer-icon.instagram img {
     border-radius: 10%;
     background-color: #E1306C; 
     padding: 5px;
 }
+
 .footer-icon.facebook img {
     border-radius: 5px;
     background-color: #3b5998; 
@@ -149,6 +166,7 @@ footer p {
     cursor: pointer;
     border-radius: 5px;
 }
+
 #ocultar-recetas:hover {
     background-color: #e64a19;
 }
