@@ -29,12 +29,27 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(22, 22, 22);
     text-decoration: none;
 }
 nav ul li:hover {
-    background-color: #29ff22;
+    background-color: #f7a288c7;
 
+}
+
+nav, a{
+    background-color: #ff5722;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+     display: flex;
+}
+
+nav a:hover{
+    color: #5ef108;
 }
 
 section {
@@ -89,7 +104,7 @@ form button:hover {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     nav ul {
         flex-direction: column;
     }
@@ -149,7 +164,7 @@ footer p {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .footer-container {
         flex-direction: column;
         gap: 10px;

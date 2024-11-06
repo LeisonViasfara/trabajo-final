@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar receta</title>
+    <title>Agregar Receta</title>
     <link rel="stylesheet" href="stile.css">
 </head>
 <body>
     <header>
         <h1>Agregar receta</h1>
         <nav>
-            <a href="index.html">Volver a Inicio</a>
+            <a href="menu.html">Ir al Menú de Recetas</a>
+
+            <a href="index.html"> volver al inicio</a>
         </nav>
     </header>
 
@@ -22,12 +24,13 @@
                 <option value="rapidas">Comidas Rápidas</option>
                 <option value="asados">Asados</option>
                 <option value="ensaladas">Ensaladas</option>
-                <option value="Otro">Otro</option>
+                <option value="otro">Otro</option>
             </select>
             <textarea id="descripcion-receta" placeholder="Descripción de la receta" required></textarea>
             <button type="button" onclick="agregarReceta()">Agregar Receta</button>
         </form>
     </section>
+
     <script src="app.js"></script>
 </body>
 </html>
