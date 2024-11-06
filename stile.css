@@ -24,6 +24,12 @@ nav ul {
     display: flex;
 }
 
+.logo img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 nav ul li {
     margin-left: 20px;
 }
@@ -46,7 +52,7 @@ section {
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     nav ul {
         flex-direction: column;
     }
@@ -106,7 +112,7 @@ footer p {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
         gap: 10px;

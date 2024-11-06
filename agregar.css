@@ -47,11 +47,11 @@ header {
 }
 
 
-@media (max-width: 480px) {
-    nav ul {
+@media (max-width: 768px) {
+    header {
         flex-direction: column;
     }
-    .categories {
+    .categories{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
