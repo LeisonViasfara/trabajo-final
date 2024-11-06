@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+nav, a{
+    background-color: #ff5722;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+     display: flex;
+}
+
+nav a:hover{
+    color: #5ef108;
+}
+
+form button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e64a19;
+}
+
+header {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+.categories button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.categories button:hover {
+    background-color: #e64a19;
+}
+
+#recetas-container {
+    margin-top: 20px;
+}
+
+.recipe {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e64a19;
+}

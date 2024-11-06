@@ -37,71 +37,13 @@ nav ul li:hover {
 
 }
 
-nav, a{
-    background-color: #ff5722;
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 10px;
-    margin: 5px;
-    cursor: pointer;
-    border-radius: 5px;
-     display: flex;
-}
-
-nav a:hover{
-    color: #5ef108;
-}
 
 section {
     padding: 20px;
     margin-top: 10px;
 }
 
-.categories button {
-    background-color: #ff5722;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin: 5px;
-    cursor: pointer;
-    border-radius: 5px;
-}
 
-.categories button:hover {
-    background-color: #e64a19;
-}
-
-#recetas-container {
-    margin-top: 20px;
-}
-
-.recipe {
-    background-color: #f4f4f4;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-}
-
-form input, form select, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-form button {
-    background-color: #ff5722;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #e64a19;
-}
 
 
 @media (max-width: 480px) {
@@ -172,31 +114,4 @@ footer p {
 }
 
 
-#ocultar-recetas {
-    background-color: #ff5722;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin: 10px 0;
-    cursor: pointer;
-    border-radius: 5px;
-}
 
-#ocultar-recetas:hover {
-    background-color: #e64a19;
-}
-
-
-.delete-button {
-    background-color: #e64a19;
-    color: white;
-    border: none;
-    padding: 5px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 3px;
-    font-size: 0.9em;
-}
-.delete-button:hover {
-    background-color: #b33922;
-}

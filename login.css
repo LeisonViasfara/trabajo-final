@@ -54,3 +54,10 @@ button:hover {
     margin-top: 1rem;
     color: #ff6347;
 }
+
+ a{
+    color: #010c01;
+    display: flex 20px;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
