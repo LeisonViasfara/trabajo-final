@@ -7,7 +7,7 @@ body {
     background-color: #f3f3f3;
 }
 
-.login-container {
+.registro-container {
     background-color: white;
     padding: 2rem;
     border-radius: 5px;
@@ -27,8 +27,16 @@ label {
 }
 
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="text"] {
     width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"]{
     padding: 0.5rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
