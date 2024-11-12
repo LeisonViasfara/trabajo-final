@@ -18,7 +18,8 @@
                 <li><a href="agregar.html">Agregar</a></li>
                 <li><a href="menu.html">Menú de recetas</a></li>
                 <li><a href="#contacto">Contáctanos</a></li>
-                <li><a href="login.html">Registrarse</a></li>
+                <li><a href="login.html" id="userLink">Iniciar Sesión</a></li>
+                <li> <a href="#" id="logoutLink" style="display: none;">Cerrar Sesión</a></li>
                 
             </ul>
         </nav>
@@ -70,6 +71,27 @@
 
 <script src="app.js"></script>
 
+<script>
+    const user = JSON.parse(localStorage.getItem("user"));
+    const isLogged = JSON.parse(localStorage.getItem("logged"));
+    const userLink = document.getElementById("userLink");
+    const logoutLink = document.getElementById("logoutLink");
+
+    if (isLogged && user && user.nombre) {
+        userLink.textContent = ` ${user.nombre}`;
+        userLink.href = "#"; // Evita la redirección al login/registro
+        logoutLink.style.display = "inline"; // Muestra el enlace "Cerrar Sesión"
+    } else {
+        userLink.textContent = "Iniciar Sesión";
+        userLink.href = "login.html";
+    }
+
+    logoutLink.addEventListener("click", function(e) {
+        e.preventDefault();
+        localStorage.setItem("logged", JSON.stringify(false));
+        window.location.href = "/login.html";
+    });
+</script>
 
 </body>
 </html>

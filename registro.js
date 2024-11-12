@@ -16,6 +16,8 @@ formRegistro.addEventListener("submit", function (e) {
     };
 
     localStorage.setItem("user", JSON.stringify(newUser));
-
+    alert("Registro exitoso. Inicia sesión para continuar.");
     window.location.href = "/index.html";
 });
+
+
