@@ -10,7 +10,7 @@ formLogin.addEventListener("submit", function(e) {
     if (user && emailLogin === user.correo && passwordLogin === user.password) {
         alert("Inicio de sesión exitoso");
         localStorage.setItem("logged", JSON.stringify(true));
-        window.location.href = "/index.html";
+        window.location.href = "index.html";
     } else {
         alert("Usuario o contraseña incorrectos. Regístrate si no tienes cuenta.");
     }

@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rece-Ar: Recetas de Comida</title>
     <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
 </head>
 <body>
     
     <header>
-        <div class="logo">Rece-Ar
-             <img src="imagenes/db53acd9-23a2-410b-987d-c073f23c41f3.jpeg" style="width: 80px;" alt="foto perfil"> </div>
+        <div class="logo">
+             <img src="imagenes/DALL·E 2024-11-16 17.19.57 - A food-themed logo design for a brand named 'Rece-Ar' with a green background to evoke freshness and health. The design prominently features a buffet .webp" style="width: 130px;" alt="foto perfil"> </div>
         <nav>
             <ul>
                 <li><a href="#acerca">Acerca de</a></li>
@@ -42,8 +43,12 @@
             Queremos preservar la tradición culinaria mientras agregamos un toque de modernidad. Encuentra 
          
            </p>
-         <img src="imagenes/5c87bf97-d530-46ea-8105-0fdfb71bfa99.jpeg" style="width: 200px;" alt="foto de un buffe">
+         <img src="imagenes/DALL·E 2024-11-16 17.19.57 - A food-themed logo design for a brand named 'Rece-Ar' with a green background to evoke freshness and health. The design prominently features a buffet .webp"  style="width: 200px;" alt="foto logo">
 
+         <img src="imagenes/db53acd9-23a2-410b-987d-c073f23c41f3.jpeg" style="width: 200px;" alt="foto de un buffe">
+
+         <img src="imagenes/5c87bf97-d530-46ea-8105-0fdfb71bfa99.jpeg" style="width: 200px;" alt="foto de un buffe">
+         
     </section>
 
     
@@ -52,6 +57,60 @@
         <p>¿Tienes alguna duda o sugerencia? Escríbenos a contacto@rece-ar.com</p>
     </section>
      
+<section id="Reseña">
+
+    <div class="card">
+        <img src="imagen1.jpg" alt="Reseña 1">
+        <div class="description">
+            <h3>Danghelly viasfara </h3>
+            <p>Este producto ofrece una calidad excepcional y es altamente recomendado por los expertos.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagen2.jpg" alt="Reseña 2">
+        <div class="description">
+            <h3>Diana obregon </h3>
+            <p>Un diseño innovador que combina funcionalidad y estilo en un solo paquete.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagenes/5c87bf97-d530-46ea-8105-0fdfb71bfa99.jpeg" alt="Reseña 3">
+        <div class="description">
+            <h3>juan manuel</h3>
+            <p>Perfecto para quienes buscan eficiencia y rendimiento sin compromisos.</p>
+        </div>
+    </div>
+    
+</section>
+   
+
+    
+    <script src="app.js"></script>
+    
+    <script>
+        const user = JSON.parse(localStorage.getItem("user"));
+        const isLogged = JSON.parse(localStorage.getItem("logged"));
+        const userLink = document.getElementById("userLink");
+        const logoutLink = document.getElementById("logoutLink");
+    
+        if (isLogged && user && user.nombre) {
+            userLink.textContent = ` ${user.nombre}`;
+            userLink.href = "#"; 
+            logoutLink.style.display = "inline"; 
+        } else {
+            userLink.textContent = "Iniciar Sesión";
+            userLink.href = "login.html";
+        }
+    
+        logoutLink.addEventListener("click", function(e) {
+            e.preventDefault();
+            localStorage.setItem("logged", JSON.stringify(false));
+            window.location.href = "/login.html";
+        });
+    </script>
+    <script src="login.js"></script>
 
 <footer>
   <div class="footer-container">
@@ -69,29 +128,6 @@
 </footer>
 <box-icon type='logo' name='instagram'></box-icon>
 
-<script src="app.js"></script>
-
-<script>
-    const user = JSON.parse(localStorage.getItem("user"));
-    const isLogged = JSON.parse(localStorage.getItem("logged"));
-    const userLink = document.getElementById("userLink");
-    const logoutLink = document.getElementById("logoutLink");
-
-    if (isLogged && user && user.nombre) {
-        userLink.textContent = ` ${user.nombre}`;
-        userLink.href = "#"; // Evita la redirección al login/registro
-        logoutLink.style.display = "inline"; // Muestra el enlace "Cerrar Sesión"
-    } else {
-        userLink.textContent = "Iniciar Sesión";
-        userLink.href = "login.html";
-    }
-
-    logoutLink.addEventListener("click", function(e) {
-        e.preventDefault();
-        localStorage.setItem("logged", JSON.stringify(false));
-        window.location.href = "/login.html";
-    });
-</script>
 
 </body>
 </html>
