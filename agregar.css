@@ -9,8 +9,8 @@ body {
     line-height: 1.6;
 }
 
-nav, a{
-    background-color: #ff5722;
+nav a{
+    background-color: #f73a00;
     color: rgb(255, 255, 255);
     border: none;
     padding: 10px;
@@ -102,5 +102,5 @@ form button {
 }
 
 form button:hover {
-    background-color: #e64a19;
+    background-color: #0afa2a;
 }

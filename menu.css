@@ -17,6 +17,9 @@ nav a {
     margin: 0 10px;
 }
 
+nav a:hover{
+    color: #5ef108;
+}
 
 .categories button {
     background-color: #ff5722;
