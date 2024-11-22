@@ -61,3 +61,35 @@ button:hover {
     margin-top: 1rem;
     color: #ff6347;
 }
+
+/* Estilo general del formulario */
+.form-group {
+    margin-bottom: 10px; 
+}
+
+.form-label {
+    display: block; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+}
+
+/* Contenedor para las opciones de radio */
+.radio-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+/* Estilo para cada opción */
+.radio-option {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+.radio-option input[type="radio"] {
+    margin-top: 8px; 
+    cursor: pointer; 
+}

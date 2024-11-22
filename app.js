@@ -1,5 +1,6 @@
 let recetas = [];
 
+// Cargar recetas del almacenamiento local al cargar la página
 function cargarRecetas() {
     const recetasAlmacenadas = localStorage.getItem("recetas");
     if (recetasAlmacenadas) {
@@ -10,10 +11,16 @@ function cargarRecetas() {
     }
 }
 
+// Agregar una nueva receta y almacenarla
 function agregarReceta() {
-    const nombre = document.getElementById("nombre-receta").value;
-    const categoria = document.getElementById("categoria-receta").value;
-    const descripcion = document.getElementById("descripcion-receta").value;
+    const nombre = document.getElementById("nombre-receta").value.trim();
+    const categoria = document.getElementById("categoria-receta").value.trim();
+    const descripcion = document.getElementById("descripcion-receta").value.trim();
+
+    if (!nombre || !categoria || !descripcion) {
+        alert("Por favor, completa todos los campos antes de agregar una receta.");
+        return;
+    }
 
     const receta = {
         id: Date.now(),
@@ -25,12 +32,14 @@ function agregarReceta() {
     recetas.push(receta);
     localStorage.setItem("recetas", JSON.stringify(recetas));
     alert("Receta agregada con éxito.");
-    document.getElementById("form-receta").reset();
+    mostrarTodasRecetas(); 
+    document.getElementById("form-receta").reset(); 
 }
 
+// Crear y agregar una sección para una receta específica
 function crearSeccionReceta(receta) {
     const categoriaContainer = document.getElementById(`categoria-${receta.categoria}`) || crearCategoriaContainer(receta.categoria);
-    
+
     const recetaSection = document.createElement("section");
     recetaSection.classList.add("recipe-section");
     recetaSection.setAttribute("id", `receta-${receta.id}`);
@@ -44,6 +53,7 @@ function crearSeccionReceta(receta) {
     categoriaContainer.appendChild(recetaSection);
 }
 
+// Crear un contenedor para una nueva categoría si no existe
 function crearCategoriaContainer(categoria) {
     const recetasContainer = document.getElementById("recetas-container");
     const categoriaSection = document.createElement("div");
@@ -54,9 +64,10 @@ function crearCategoriaContainer(categoria) {
     return categoriaSection;
 }
 
+// Mostrar todas las recetas en el contenedor principal
 function mostrarTodasRecetas() {
     const recetasContainer = document.getElementById("recetas-container");
-    recetasContainer.innerHTML = "";
+    recetasContainer.innerHTML = ""; 
     const categoriasMap = {};
 
     recetas.forEach(receta => {
@@ -67,14 +78,17 @@ function mostrarTodasRecetas() {
     });
 }
 
+// Eliminar una receta por su ID
 function eliminarReceta(id) {
     recetas = recetas.filter(receta => receta.id !== id);
-    localStorage.setItem("recetas", JSON.stringify(recetas));
-    mostrarTodasRecetas();
+    localStorage.setItem("recetas", JSON.stringify(recetas)); 
+    mostrarTodasRecetas(); 
 }
 
+// Ocultar todas las recetas (opcional)
 function ocultarRecetas() {
     document.getElementById("recetas-container").innerHTML = "";
 }
 
+// Cargar las recetas cuando el DOM esté listo
 document.addEventListener("DOMContentLoaded", cargarRecetas);
